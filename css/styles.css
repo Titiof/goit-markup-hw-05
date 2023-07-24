@@ -126,14 +126,16 @@ button {
   gap: 40px;
 }
 
-.menu-link-item {
-  font-weight: 400;
-  color: var(--body-text-slate);
-}
-
 .menu-list-item {
   font-weight: 500;
-  color: var(--body-text-slate);
+}
+
+.menu-list-item .menu-list-c {
+  color: var(--pressed-state-cta);
+}
+
+.menu-link-item {
+  font-weight: 400;
 }
 
 .header-link-padding {
@@ -176,7 +178,7 @@ button {
 .header-link-padding:focus,
 .active:hover,
 .active:focus {
-  background-color: var(--pressed-state-cta);
+  color: var(--pressed-state-cta);
 }
 
 /* ==========/HEADER========== */
@@ -245,8 +247,13 @@ button {
 }
 
 .modal-button {
+  transition-property: background-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+
   min-width: 169px;
   padding: 12px 24px;
+
   border-radius: 4px;
   border: 1px solid var(--accent-hairlines-subtle-backgrounds);
   font-family: inherit;
@@ -351,6 +358,9 @@ button {
 }
 
 .social-icon {
+  transition-property: background-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
   fill: var(--light-mode-backgrounds);
 }
 
@@ -432,6 +442,9 @@ button {
 .costumers-item {
   width: 168px;
   height: 88px;
+  transition-property: border-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
   color: var(--body-text-light-slate);
   border-color: var(--pressed-state-cta);
 }
@@ -486,6 +499,9 @@ button {
     (100% - var(--column-indent) * calc(var(--column-items) - 1)) /
       var(--column-items)
   );
+  transition-property: color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
 }
 .gallery-link {
   display: block;
