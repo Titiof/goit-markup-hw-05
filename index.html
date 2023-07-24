@@ -25,20 +25,20 @@
                         class="logo-studio">Studio</span></a>
                 <ul class="menu-list list">
                     <li class="menu-list-item">
-                        <a class="menu-link header-link-padding link" href="./index.html">Studio</a>
+                        <a class="menu-list-item header-link-padding active link" href="./index.html">Studio</a>
                     </li>
 
                     <li class="menu-list-item">
-                        <a class="menu-link header-link-padding link" href="./portfolio.html">Portfolio</a>
+                        <a class="menu-list-item header-link-padding active link" href="./portfolio.html">Portfolio</a>
                     </li>
 
                     <li class="menu-list-item">
-                        <a class="menu-link header-link-padding link" href="">Contacts</a>
+                        <a class="menu-list-item header-link-padding active link" href="">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <address>
-                <ul class="menu-link list">
+                <ul class="menu-list list">
                     <li class="menu-link-item header-link-padding">
                         <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
@@ -54,7 +54,7 @@
         <section class="heroimage">
             <div class="hero-container container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="modal-button-image" type="button">Order Service</button>
+                <button class="modal-button-image" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- Section1 -->
@@ -395,6 +395,12 @@
             </div>
         </div>
     </footer>
+    <!-- <div class="modal-win is-hidden" data-modal>
+        <div class="backdrop">
+            <button class="modal-close" type="button" data-modal-close></button>
+        </div>
+    </div> -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
