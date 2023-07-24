@@ -79,8 +79,6 @@ button {
   column-gap: 120px;
 }
 
-.transition {
-}
 /* ==========HEADER========== */
 .page-header {
   display: flex;
@@ -128,10 +126,6 @@ button {
   gap: 40px;
 }
 
-.menu-list-it {
-  position: relative;
-}
-
 .header-link-padding {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -144,7 +138,6 @@ button {
 
 .active {
   position: relative;
-  padding: 24px 0;
 }
 
 .active::after {
@@ -160,19 +153,19 @@ button {
   background-color: var(--pressed-state-cta);
 }
 
-.contact:hover,
-.contact:focus,
-.active:hover,
-.active:focus {
-  color: var(--pressed-state-cta);
-}
-
 .contact {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-slate);
+}
+
+.contact:hover,
+.contact:focus,
+.active:hover,
+.active:focus {
+  color: var(--pressed-state-cta);
 }
 
 /* ==========/HEADER========== */
