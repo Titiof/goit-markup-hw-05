@@ -133,9 +133,14 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--body-text-slate);
 }
 
+.header-link {
+  transition-property: color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+  color: var(--body-text-slate);
+}
 .active {
   position: relative;
 }
@@ -278,6 +283,9 @@ button {
 
 .advantage-item {
   width: calc((100% - 72px) / 4);
+  transition-property: background-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
   background-color: var(--header-team-card-background);
 }
 
@@ -472,7 +480,6 @@ button {
     (100% - var(--column-indent) * calc(var(--column-items) - 1)) /
       var(--column-items)
   );
-  transition: color var(--timing-duration) var(--timing-function);
 }
 .gallery-link {
   display: block;
