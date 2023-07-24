@@ -126,23 +126,40 @@ button {
   gap: 40px;
 }
 
+.menu-link-item {
+  font-weight: 500;
+  color: var(--body-text-slate);
+}
+
 .header-link-padding {
   padding-top: 24px;
   padding-bottom: 24px;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--body-text-slate);
+}
+
+.menu-list-item {
+  font-weight: 400;
+  color: var(--body-text-slate);
+}
+
+.menu-list-item:hover,
+.menu-list-item:focus,
+.active:hover,
+.active:focus {
+  color: var(--pressed-state-cta);
 }
 
 .header-link {
   transition-property: color;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
-  color: var(--body-text-slate);
 }
 .active {
   position: relative;
+  color: var(--body-text-slate);
 }
 
 .active::after {
@@ -156,21 +173,6 @@ button {
   height: 4px;
   border-radius: 2px;
   background-color: var(--pressed-state-cta);
-}
-
-.contact {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--body-text-slate);
-}
-
-.contact:hover,
-.contact:focus,
-.active:hover,
-.active:focus {
-  color: var(--pressed-state-cta);
 }
 
 /* ==========/HEADER========== */
