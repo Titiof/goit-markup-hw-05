@@ -246,7 +246,7 @@ button {
 }
 
 .modal-button {
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
 
@@ -441,7 +441,7 @@ button {
 .costumers-item {
   width: 168px;
   height: 88px;
-  transition-property: background-color;
+  transition-property: border-color;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
   color: var(--body-text-light-slate);
@@ -498,7 +498,7 @@ button {
     (100% - var(--column-indent) * calc(var(--column-items) - 1)) /
       var(--column-items)
   );
-  transition-property: color;
+  transition-property: box-shadow;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
 }
