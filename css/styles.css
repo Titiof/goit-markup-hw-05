@@ -130,7 +130,7 @@ button {
   font-weight: 500;
 }
 
-.menu-list-c > .menu-list-item {
+.menu-list-item > .menu-list-c {
   color: var(--pressed-state-cta);
 }
 
