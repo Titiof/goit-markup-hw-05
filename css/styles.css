@@ -519,6 +519,30 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.gallery-item-pic {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-pic-backtext {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform var(--timing-duration) var(--timing-function);
+  height: 100%;
+  padding: 40px 32px;
+  color: var(--light-mode-backgrounds);
+
+  background-color: var(--cta-focused-active-links);
+}
+
+.gallery-link:hover .gallery-pic-backtext,
+.gallery-link:focus .gallery-pic-backtext {
+  transform: translateY(0%);
+}
+
 .gallery-content {
   padding: 32px 16px;
   border: 1px solid var(--accent-hairlines-subtle-backgrounds);
