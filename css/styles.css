@@ -640,7 +640,8 @@ button {
   justify-content: center;
   background-color: var(--accent-hairlines-subtle-backgrounds);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill var(--timing-duration) var(--timing-function);
+  transition: border var(--timing-duration) var(--timing-function),
+    background-color var(--timing-duration) var(--timing-function);
 }
 
 .modal-window-close-btn:hover,
@@ -651,7 +652,7 @@ button {
 }
 
 .modal-window-close-btn-img {
-  transition: transform var(--timing-duration) var(--timing-function);
+  transition: fill var(--timing-duration) var(--timing-function);
 }
 
 .modal-window-close-btn-img:hover,
