@@ -251,16 +251,8 @@ button {
 }
 
 .modal-button {
-  transition: color var(--timing-duration) var(--timing-function),
-    background-color var(--timing-duration) var(--timing-function),
-    border-color var(--timing-duration) var(--timing-function),
-    box-shadow var(--timing-duration) var(--timing-function);
-
   min-width: 169px;
   padding: 12px 24px;
-
-  border-radius: 4px;
-  border: 1px solid var(--accent-hairlines-subtle-backgrounds);
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -269,8 +261,14 @@ button {
   letter-spacing: 0.04em;
   outline: transparent;
   outline-offset: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-hairlines-subtle-backgrounds);
   background-color: var(--light-mode-backgrounds);
   color: var(--cta-focused-active-links);
+  transition: color var(--timing-duration) var(--timing-function),
+    background-color var(--timing-duration) var(--timing-function),
+    border-color var(--timing-duration) var(--timing-function),
+    box-shadow var(--timing-duration) var(--timing-function);
 }
 
 .modal-button:hover,
@@ -507,8 +505,9 @@ button {
 
 .gallery-link {
   display: block;
-  transition: box-shadow var(--timing-duration) var(--timing-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .gallery-link:hover,
 .gallery-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
