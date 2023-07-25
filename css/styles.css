@@ -251,7 +251,10 @@ button {
 }
 
 .modal-button {
-  transition: color var(--timing-duration) var(--timing-function);
+  transition: color var(--timing-duration) var(--timing-function),
+    background-color var(--timing-duration) var(--timing-function),
+    border-color var(--timing-duration) var(--timing-function),
+    box-shadow var(--timing-duration) var(--timing-function);
 
   min-width: 169px;
   padding: 12px 24px;
@@ -488,12 +491,7 @@ button {
   gap: 24px;
   margin-bottom: 72px;
 }
-.bottom-item {
-  transition: color var(--timing-duration) var(--timing-function),
-    background-color var(--timing-duration) var(--timing-function),
-    border-color var(--timing-duration) var(--timing-function),
-    box-shadow var(--timing-duration) var(--timing-function);
-}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -505,13 +503,11 @@ button {
     (100% - var(--column-indent) * calc(var(--column-items) - 1)) /
       var(--column-items)
   );
-  transition: color var(--timing-duration) var(--timing-function),
-    background-color var(--timing-duration) var(--timing-function),
-    border-color var(--timing-duration) var(--timing-function),
-    box-shadow var(--timing-duration) var(--timing-function);
 }
+
 .gallery-link {
   display: block;
+  transition: box-shadow var(--timing-duration) var(--timing-function);
 }
 .gallery-link:hover,
 .gallery-link:focus {
