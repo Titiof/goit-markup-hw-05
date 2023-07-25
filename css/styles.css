@@ -441,8 +441,7 @@ button {
 .costumers-item {
   width: 168px;
   height: 88px;
-  transition-property: border-color var(--timing-duration)
-      var(--timing-function),
+  transition: border-color var(--timing-duration) var(--timing-function),
     color var(--timing-duration) var(--timing-function);
   color: var(--body-text-light-slate);
   border-color: var(--pressed-state-cta);
